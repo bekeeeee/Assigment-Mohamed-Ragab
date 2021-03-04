@@ -1,0 +1,155 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 548px 85px;
+    grid-template-rows: 175px 77px 52px;
+    gap: 13px 13px;
+    grid-template-areas:
+      'production-cash Goods-sold'
+      'production-cash Rmp'
+      'owners-lenders-community .';
+  }
+
+  .Goods-sold {
+    grid-area: Goods-sold;
+    background-color: #00aeef;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Goods-sold .circle {
+    margin-bottom: 20px;
+  }
+
+  .Rmp {
+    display: flex;
+    grid-area: Rmp;
+    background-color: #a7a9ac;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .owners-lenders-community {
+    display: grid;
+    grid-template-columns: 181px 184px 181px;
+    grid-template-rows: 58px;
+    gap: 15px 15px;
+    grid-template-areas: 'owners lenders community';
+    grid-area: owners-lenders-community;
+    background-color: #d9d9d9;
+  }
+
+  .owners {
+    grid-area: owners;
+    background-color: #da2c74;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .lenders {
+    grid-area: lenders;
+    background-color: #cb58a2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .community {
+    grid-area: community;
+    background-color: #cb58a2;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .community p {
+    width: 50%;
+  }
+  .Production {
+    grid-area: Production;
+    background-color: #00aeef;
+  }
+  .containerr {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid black;
+    padding-top: 15px;
+    margin-top: 15px;
+  }
+  
+  .containerr div {
+    background-color: #ffffff;
+    font-weight: bold;
+    border: 2px solid black;
+    margin-top: -40px;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+  }
+  .production-cash {
+    display: grid;
+    grid-template-columns: 548px;
+    grid-template-rows: 175px 77px;
+    gap: 16px 16px;
+    grid-template-areas:
+      'Production'
+      'Cash';
+    grid-area: production-cash;
+    background-color: #d9d9d9;
+  }
+
+  .Cash {
+    grid-area: Cash;
+    background-color: #f5821e;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+ 
+  .circle  {
+    position: relative;
+    background-color: #ffffff;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+  }
+  .small-circle {
+    position: relative;
+    background-color: #ffffff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  #text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+  }
+  .circle-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .owners-circle {
+    background-color: #a12353;
+  }
+  .dashed {
+    border: 3px dashed #ff0000;
+    border-style: none none dashed;
+  }
+  .translate-circle {
+    transform: translate(0, 8px);
+  }
+  .cash-circle {
+    background-color: #939393;
+  }
